@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  
+:root {
+  --button-color: #B92A54;
+  --button-color-hover: #94304e;
+  --text-color: #000;
+  --rodape: #3F5D3F;
+  --cabecalho: #F69904;
+  --fundo: #F0F0F0;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--fundo);
+    color: var(--text-color);
+  }
+  
+  #barra-amarela {
+    background-color: var(--cabecalho);
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  
+
+  #inicio h1{
+    text-align: center;
+    
+}
+#inicio h2{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+  .container {
+    display: flex;
+  }
+  
+  .barra-amarela2 {
+    width: 30%; 
+    height: 2px; 
+    background-color: #B92A54; 
+    border-bottom: 5px solid #B92A54;
+    text-align: center; 
+    margin-left: 35%;
+    
+}
+
+
+
+
+
+
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: var(--cabecalho);
+  }
+  
+
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .Menu .links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+      margin-left: auto;
+    }
+  
+    .mobile-menu-icon img {
+      width: 30px;
+    }
+  
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: none;
+    }
+  
+    .mobile-menu .links {
+      display: flex;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    table th, table td {
+      padding: 5px;
+    }
+  }
+  
+  button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--button-color-hover);
+  }
+
+  @media (max-width: 768px) {
+    #barra-amarela h1 {
+      font-size: 18px;
+    }
+  
+    .search input {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    table th, table td {
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    table {
+      overflow-x: auto;
+      display: block;
+    }
+  
+    .language-switch img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+
+  /*PARTE DO GRAICO (VENDAS) */
+  #grafico {
+    display: flex; /* Para centralizar */
+    justify-content: center;
+    margin-top: 20px; /* Espaço entre a barra amarela e o gráfico */
+  }
+  
+  #grafico img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #ccc; /* Opcional: Adiciona uma borda ao gráfico */
+    border-radius: 8px; /* Opcional: Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: Sombra para destaque */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+  
+
+
+

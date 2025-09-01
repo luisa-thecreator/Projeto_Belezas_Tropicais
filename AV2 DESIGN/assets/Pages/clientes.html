@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Administrativo de Vendas</title>
+    <link rel="icon" href="./img/LogoTopo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/perfiladm.css" />
+    <link rel="stylesheet" href="../css/estoque.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div id="barra-amarela">
+      <h1 >Painel Administrativo</h1>
+    </div>
+    <header>
+
+      <div class="Menu">
+
+          <nav class="menu-navegacao">
+              <a href="#"><img src="../img/logo.png" alt="Logo"></a>
+
+              <div class="links" id="links1" >
+                  <a href="perfiladm.html"  id="estoque">Estoque</a>
+                  <a href="vendas.html" id="vendas">Vendas</a>
+                  <a href="clientes.html" id="clientes">Clientes</a>
+                  <a href="adm.html" id="adm">Admistração</a>
+                  <a href="#"  id="chatbot">Chatbot</a>
+              </div>
+
+              
+        
+          
+              <div class="search">
+                  <label for="seachInput">
+                      <span class="material-icons">search</span>
+                  </label>
+                  <input type="text" id="seachInput" placeholder="Procure por produtos...">
+              </div>
+
+
+              <div class="icones">
+                  <span on class="material-icons">account_circle</span>
+                  <span id="modo" onclick= "toggleDarkMode()"class="material-symbols-outlined">bedtime</span>
+                  <span onclick="aumentarLetra()"class="material-symbols-outlined">text_increase</span>
+                  <span onclick="diminuirLetra()"class="material-symbols-outlined">text_decrease</span>
+              
+              </div>
+
+              <div class="language-switch">
+                  <img src="../img/brasil.jpg" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                  <img src="../img/ingles.jpeg" alt="English" class="flag" onclick="changeLanguage('en')">  
+                  <img src="../img/WhatsApp Image 2024-11-28 at 11.33.47.jpeg" alt="Espanõl" class="flag" onclick="changeLanguage('es')"> 
+                </div>
+            
+         
+      </div>
+      <div class="mobile-menu-icon">
+          <button onclick="responsividade()"><img class="icon" src="../img/menu2.png" alt=""></button>
+      </div>
+</nav>
+  <div class="mobile"></div>
+      <div class="mobile-menu">
+          <div class="links" id="links1" >
+            <a href="perfiladm.html"  id="estoque">Estoque</a>
+            <a href="vendas.html" id="vendas">Vendas</a>
+            <a href="clientes.html" id="clientes">Clientes</a>
+            <a href="adm.html" id="adm">Admistração</a>
+            <a href="#"  id="chatbot">Chatbot</a>
+          </div>
+
+          <div class="icones">
+            <span on class="material-icons">account_circle</span>
+            <span id="modo" onclick= "toggleDarkMode()"class="material-symbols-outlined">bedtime</span>
+            <span onclick="aumentarLetra()"class="material-symbols-outlined">text_increase</span>
+            <span onclick="diminuirLetra()"class="material-symbols-outlined">text_decrease</span>
+        
+        </div>
+
+          </div>
+  </div>
+   
+</div>
+
+  </header>
+      <main>
+        <div id="inicio">
+          <h1 id="inicio1">Clientes</h1>
+          <div class="barra-amarela2"></div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th id="id">ID</th>
+              <th id="nome">Nome</th>
+              <th id="email">E-mail</th>
+              <th id="tel">Telefone</th>
+              <th id="quant">Quantidade de compra</th>
+              <th id="preco">Preço total</th>
+              <th id="data">Data da última compra</th>
+              <th id="nota">Nota Fiscal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Amanda Clara Mendes</td>
+              <td>amandaclara@email.com</td>
+              <td>81 985144097</td>
+              <td>5</td>
+              <td>R$200,00</td>
+              <td>25/07/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Ana Silva</td>
+              <td>ana.silva@email.com</td>
+              <td>(11) 98765-4321</td>
+              <td>10</td>
+              <td>R$400,00</td>
+              <td>01/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>João Santos</td>
+              <td>joao.santos@email.com</td>
+              <td>(21) 99988-7766</td>
+              <td>7</td>
+              <td>R$350,00</td>
+              <td>15/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>004</td>
+              <td>Mariana Costa</td>
+              <td>marianacosta@email.com</td>
+              <td>71 98765-1234</td>
+              <td>3</td>
+              <td>R$150,00</td>
+              <td>18/07/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>005</td>
+              <td>Pedro Henrique</td>
+              <td>pedrohenrique@email.com</td>
+              <td>21 91234-5678</td>
+              <td>8</td>
+              <td>R$320,00</td>
+              <td>30/08/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>006</td>
+              <td>Beatriz Ferreira</td>
+              <td>beatrizf@email.com</td>
+              <td>11 99876-5432</td>
+              <td>6</td>
+              <td>R$240,00</td>
+              <td>05/09/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>007</td>
+              <td>Lucas Almeida</td>
+              <td>lucasalmeida@email.com</td>
+              <td>41 91234-5678</td>
+              <td>12</td>
+              <td>R$480,00</td>
+              <td>20/09/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>008</td>
+              <td>Fernanda Oliveira</td>
+              <td>fernandaoliveira@email.com</td>
+              <td>51 92134-5678</td>
+              <td>9</td>
+              <td>R$360,00</td>
+              <td>10/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>009</td>
+              <td>Tiago Mendes</td>
+              <td>tiagomendes@email.com</td>
+              <td>31 98876-4321</td>
+              <td>4</td>
+              <td>R$160,00</td>
+              <td>15/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>010</td>
+              <td>Sofia Ribeiro</td>
+              <td>sofiaribeiro@email.com</td>
+              <td>61 98765-9876</td>
+              <td>7</td>
+              <td>R$280,00</td>
+              <td>20/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>011</td>
+              <td>Gabriel Souza</td>
+              <td>gabrielsouza@email.com</td>
+              <td>91 92345-6789</td>
+              <td>5</td>
+              <td>R$200,00</td>
+              <td>25/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>012</td>
+              <td>Carolina Lima</td>
+              <td>carolinalima@email.com</td>
+              <td>81 91123-4567</td>
+              <td>10</td>
+              <td>R$400,00</td>
+              <td>30/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>013</td>
+              <td>João Gabriel</td>
+              <td>joaogabriel@email.com</td>
+              <td>13 95432-1098</td>
+              <td>15</td>
+              <td>R$600,00</td>
+              <td>02/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>014</td>
+              <td>Isabella Costa</td>
+              <td>isabellacosta@email.com</td>
+              <td>27 96543-7890</td>
+              <td>6</td>
+              <td>R$240,00</td>
+              <td>05/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>015</td>
+              <td>Matheus Martins</td>
+              <td>matheusmartins@email.com</td>
+              <td>14 94567-1234</td>
+              <td>9</td>
+              <td>R$360,00</td>
+              <td>08/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>016</td>
+              <td>Larissa Santos</td>
+              <td>larissasantos@email.com</td>
+              <td>48 94321-4567</td>
+              <td>7</td>
+              <td>R$280,00</td>
+              <td>12/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>017</td>
+              <td>Rodrigo Rocha</td>
+              <td>rodrigorocha@email.com</td>
+              <td>85 91234-7654</td>
+              <td>11</td>
+              <td>R$440,00</td>
+              <td>15/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>018</td>
+              <td>Camila Almeida</td>
+              <td>camilaalmeida@email.com</td>
+              <td>88 98765-1122</td>
+              <td>8</td>
+              <td>R$320,00</td>
+              <td>20/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>019</td>
+              <td>Renan Costa</td>
+              <td>renancosta@email.com</td>
+              <td>75 92123-5678</td>
+              <td>10</td>
+              <td>R$400,00</td>
+              <td>22/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>020</td>
+              <td>Alice Nogueira</td>
+              <td>alicenogueira@email.com</td>
+              <td>99 98765-4321</td>
+              <td>12</td>
+              <td>R$480,00</td>
+              <td>24/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>021</td>
+              <td>Victor Farias</td>
+              <td>victorfarias@email.com</td>
+              <td>77 96543-2109</td>
+              <td>14</td>
+              <td>R$560,00</td>
+              <td>26/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>022</td>
+              <td>Julia Freitas</td>
+              <td>juliafreitas@email.com</td>
+              <td>66 95432-1987</td>
+              <td>3</td>
+              <td>R$120,00</td>
+              <td>27/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>023</td>
+              <td>Diego Barros</td>
+              <td>diegobarros@email.com</td>
+              <td>61 94321-9087</td>
+              <td>9</td>
+              <td>R$360,00</td>
+              <td>27/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>024</td>
+              <td>Luiza Mendes</td>
+              <td>luizamendes@email.com</td>
+              <td>43 98712-3456</td>
+              <td>5</td>
+              <td>R$200,00</td>
+              <td>28/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>025</td>
+              <td>Bruno Carvalho</td>
+              <td>brunocarvalho@email.com</td>
+              <td>11 91234-6543</td>
+              <td>4</td>
+              <td>R$160,00</td>
+              <td>29/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>026</td>
+              <td>Sabrina Lopes</td>
+              <td>sabrinalopes@email.com</td>
+              <td>13 98765-1234</td>
+              <td>10</td>
+              <td>R$400,00</td>
+              <td>30/09/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>027</td>
+              <td>Felipe Cardoso</td>
+              <td>felipecardoso@email.com</td>
+              <td>18 91234-5678</td>
+              <td>8</td>
+              <td>R$320,00</td>
+              <td>01/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>028</td>
+              <td>Gabriela Monteiro</td>
+              <td>gabrielamonteiro@email.com</td>
+              <td>81 98765-4321</td>
+              <td>6</td>
+              <td>R$240,00</td>
+              <td>02/02/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>029</td>
+              <td>Leonardo Pereira</td>
+              <td>leonardopereira@email.com</td>
+              <td>19 97654-1234</td>
+              <td>7</td>
+              <td>R$280,00</td>
+              <td>03/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>030</td>
+              <td>Patricia Vieira</td>
+              <td>patriciavieira@email.com</td>
+              <td>35 94321-1234</td>
+              <td>5</td>
+              <td>R$200,00</td>
+              <td>04/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>031</td>
+              <td>Rafael Oliveira</td>
+              <td>rafaeloliveira@email.com</td>
+              <td>44 93456-7890</td>
+              <td>11</td>
+              <td>R$440,00</td>
+              <td>05/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>032</td>
+              <td>Luana Costa</td>
+              <td>luanacosta@email.com</td>
+              <td>48 96543-2109</td>
+              <td>9</td>
+              <td>R$360,00</td>
+              <td>06/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>033</td>
+              <td>Tiago Mendes</td>
+              <td>tiagomendes@email.com</td>
+              <td>21 98765-1234</td>
+              <td>7</td>
+              <td>R$280,00</td>
+              <td>07/02/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>034</td>
+              <td>Samara Lima</td>
+              <td>samarlima@email.com</td>
+              <td>47 98321-7654</td>
+              <td>8</td>
+              <td>R$320,00</td>
+              <td>08/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>035</td>
+              <td>Eduardo Souza</td>
+              <td>eduardosouza@email.com</td>
+              <td>11 98123-4567</td>
+              <td>6</td>
+              <td>R$240,00</td>
+              <td>09/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>036</td>
+              <td>Ana Paula Silva</td>
+              <td>anapaulasilva@email.com</td>
+              <td>31 99876-5432</td>
+              <td>5</td>
+              <td>R$200,00</td>
+              <td>10/05/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>037</td>
+              <td>Fernanda Rocha</td>
+              <td>fernandarocha@email.com</td>
+              <td>71 93334-5567</td>
+              <td>4</td>
+              <td>R$160,00</td>
+              <td>11/03/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>038</td>
+              <td>Roberta Almeida</td>
+              <td>robertaalmeida@email.com</td>
+              <td>81 91234-5678</td>
+              <td>12</td>
+              <td>R$480,00</td>
+              <td>12/02/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>039</td>
+              <td>Caio Ferreira</td>
+              <td>caioferreira@email.com</td>
+              <td>61 97865-4321</td>
+              <td>9</td>
+              <td>R$360,00</td>
+              <td>13/08/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>040</td>
+              <td>Vanessa Pereira</td>
+              <td>vanessapereira@email.com</td>
+              <td>21 99877-1234</td>
+              <td>10</td>
+              <td>R$400,00</td>
+              <td>14/04/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>041</td>
+              <td>Leonardo Ferreira</td>
+              <td>leonardofe@email.com</td>
+              <td>85 91234-8765</td>
+              <td>6</td>
+              <td>R$240,00</td>
+              <td>15/09/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>042</td>
+              <td>Larissa Nunes</td>
+              <td>larissanunes@email.com</td>
+              <td>51 96543-2109</td>
+              <td>5</td>
+              <td>R$200,00</td>
+              <td>16/06/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>043</td>
+              <td>Gustavo Costa</td>
+              <td>gustavocosta@email.com</td>
+              <td>71 94567-1234</td>
+              <td>8</td>
+              <td>R$320,00</td>
+              <td>17/06/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>044</td>
+              <td>Júlia Moreira</td>
+              <td>juliomoreira@email.com</td>
+              <td>41 93456-7890</td>
+              <td>10</td>
+              <td>R$400,00</td>
+              <td>18/09/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>045</td>
+              <td>Felipe Oliveira</td>
+              <td>felipeoliveira@email.com</td>
+              <td>11 91345-6789</td>
+              <td>9</td>
+              <td>R$360,00</td>
+              <td>19/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>046</td>
+              <td>Monique Souza</td>
+              <td>moniquesouza@email.com</td>
+              <td>19 98976-1234</td>
+              <td>7</td>
+              <td>R$280,00</td>
+              <td>20/10/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>047</td>
+              <td>Rui Silva</td>
+              <td>ruisilva@email.com</td>
+              <td>85 97123-4321</td>
+              <td>8</td>
+              <td>R$320,00</td>
+              <td>21/04/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>048</td>
+              <td>Bruna Almeida</td>
+              <td>brunaalmeida@email.com</td>
+              <td>11 95432-1098</td>
+              <td>9</td>
+              <td>R$360,00</td>
+              <td>22/05/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>049</td>
+              <td>Marcelo Santos</td>
+              <td>marcelosantos@email.com</td>
+              <td>47 93321-7654</td>
+              <td>12</td>
+              <td>R$480,00</td>
+              <td>23/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>050</td>
+              <td>Beatriz Almeida</td>
+              <td>beatrizalmeida@email.com</td>
+              <td>11 97234-5678</td>
+              <td>6</td>
+              <td>R$240,00</td>
+              <td>02/12/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>051</td>
+              <td>Paulo Santos</td>
+              <td>paulosantos@email.com</td>
+              <td>71 98723-1122</td>
+              <td>7</td>
+              <td>R$280,00</td>
+              <td>04/12/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>052</td>
+              <td>Roberta Silva</td>
+              <td>robertasilva@email.com</td>
+              <td>11 93123-4567</td>
+              <td>10</td>
+              <td>R$400,00</td>
+              <td>01/12/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>053</td>
+              <td>Alexandre Lima</td>
+              <td>alexandrelima@email.com</td>
+              <td>13 99876-5432</td>
+              <td>5</td>
+              <td>R$200,00</td>
+              <td>03/12/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>054</td>
+              <td>Patrícia Silva</td>
+              <td>patriciasilva@email.com</td>
+              <td>21 93456-9876</td>
+              <td>8</td>
+              <td>R$320,00</td>
+              <td>28/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>055</td>
+              <td>Bruna Costa</td>
+              <td>brunacosta@email.com</td>
+              <td>61 98345-6789</td>
+              <td>9</td>
+              <td>R$360,00</td>
+              <td>29/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+            <tr>
+              <td>056</td>
+              <td>Marcelo Costa</td>
+              <td>marcelocosta@email.com</td>
+              <td>19 96234-1234</td>
+              <td>10</td>
+              <td>R$400,00</td>
+              <td>30/11/2024</td>
+              <td><a href="nota fiscal">nota fiscal</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+   
+    <script src="../js/perfiladm.js"></script>
+    <script src="../js/clientes.js"></script>
+  </body>
+</html>

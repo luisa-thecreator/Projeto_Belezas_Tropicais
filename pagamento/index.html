@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue a Compra</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>  
+    
+        <div class="barra-amarela"></div>
+        <div class="Menu">
+            <nav class="menu-navegacao">
+                <a href="../Tela Inicial/index.html"><img src="Logo.png" alt="Logo"></a>
+                <div class="links" >
+                    <a href="../Catalogo/catalogo.html" id="catalogo">Catálogo</a>
+                    <a href="../Tela Inicial/index.html#arranjo-simples-3" id="arranjos">Arranjos</a>
+                    <a href="../Tela Inicial/index.html#off" id="oferta">Oferta</a>
+                </div>
+                <div class="icones">
+                    <a href="../Carrinho/index.html"><span class="material-icons">shopping_cart</span></a>
+                    <a href="../login/criesuaconta.html"><span class="material-icons">account_circle</span></a>
+                    <span onclick="toggleDarkMode()" class="material-symbols-outlined" id="moon">bedtime</span>
+                    <div class="letras">
+                        <span onclick="aumentarLetra()" class="material-symbols-outlined">text_increase</span>
+                        <span onclick="diminuirLetra()" class="material-symbols-outlined">text_decrease</span>
+                    </div>
+                </div>
+                <div class="language-switch">
+                    <img src="WhatsApp Image 2024-11-28 at 18.58.29 (1).jpeg" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                    <img src="WhatsApp Image 2024-11-28 at 18.58.29 (2).jpeg" alt="English" class="flag" onclick="changeLanguage('en')">
+                    <img src="WhatsApp Image 2024-11-28 at 18.58.29.jpeg" alt="Espanhol" class="flag" onclick="changeLanguage('es')">
+                </div>
+               
+
+           
+
+                <div class="mobile-menu-icon">
+                    <img src="menu2 (1).png" alt=""  onclick="responsividade()">
+                </div>
+
+            </nav>
+            <div class="mobile-menu">
+            
+                <div class="links" >
+                    <a href="#" id="catalogo">Catálogo</a>
+                    <a href="#" id="arranjos">Arranjos</a>
+                    <a href="#" id="NovasFlores">Novas Flores</a>
+                    <a href="#" id="oferta">Oferta</a>
+                </div>
+                <div class="icones">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="material-icons">account_circle</span>
+                    <span onclick="toggleDarkMode()" class="material-symbols-outlined" id="moon">bedtime</span>
+                    <div class="letras">
+                        <span onclick="aumentarLetra()" class="material-symbols-outlined">text_increase</span>
+                        <span onclick="diminuirLetra()" class="material-symbols-outlined">text_decrease</span>
+                    </div>
+                </div>
+                <div class="language-switch">
+                    <img src="WhatsApp Image 2024-11-28 at 18.58.29 (1).jpeg" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                    <img src="WhatsApp Image 2024-11-28 at 18.58.29 (2).jpeg" alt="English" class="flag" onclick="changeLanguage('en')">
+                    <img src="WhatsApp Image 2024-11-28 at 18.58.29.jpeg" alt="Espanhol" class="flag" onclick="changeLanguage('es')">
+                </div>
+                <div class="mobile-menu">
+                    <a href="../Catalogo/index.html" id="mobilecatalogo" target="_blank">Catalogo</a>
+                    <a href="#" id="mobilearranjos">Arranjos</a>
+                    <a href="#" id="mobilenovasflores">Novas Flores</a>
+                    <a href="#" id="mobileoferta">Oferta</a>
+                </div>
+
+
+        
+            </div>
+        </div>
+
+        <div class="chatbot">
+            <a href="https://typebot.co/belezas-tropicais-ud29elm" target="_blank"><span class="material-symbols-outlined">local_florist</span></a>
+        </div>
+    
+        <div class="forma-de-pagamento">
+            <div class="titulo">
+                <h1 id="texto1">Escolha o pagamento</h1>
+                </div>
+            <div class="barra-vermelha"></div>
+            <div class="outras_opcoes_de_pagamento">
+                <select id="pagamento" name="pagamento">
+                    <option value="opcao" id="texto2">Outras opções de pagamento</option>
+                    <option value="debito" id="texto3">Débito</option>
+                    <option value="credito" id="texto4">Crédito</option>
+                    <option value="pix" id="texto5">Pix</option>
+                </select>
+            </div>
+            <form action="processar_pagamento.html" method="POST" id="principal">
+                <label for="nome" id="texto6">Nome do cartão:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+    
+                <label for="numero" id="texto7">Número no cartão:</label><br>
+                <div class="input-wrapper">
+                    <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                    <span class="material-icons toggle-visibility" onclick="toggleVisibility('numero-cartao')">visibility</span>
+                </div>
+                
+                <br><br>
+    
+                <label for="validade" id="texto8">Validade (MM/AA):</label><br>
+                <div class="input-wrapper">
+                    <input type="text" id="validade" placeholder="MM/AA" maxlength="5" required>
+                    <span class="material-icons toggle-visibility" onclick="toggleVisibility('validade')">visibility</span>
+                </div>
+                <br><br>
+    
+                <label for="cvv" id="texto9">CVC:</label><br>
+                <div class="input-wrapper">
+                    <input type="text" id="cvv" placeholder="000" maxlength="3" required>
+                    <span class="material-icons toggle-visibility" onclick="toggleVisibility('cvv')">visibility</span>
+                </div>
+                <br><br>
+    
+                <button type="submit" id="texto10">Pagar</button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <div class="barraverde"></div>
+            <div class="footer-container">
+    
+                <div class="footer-column">
+    
+                  <img src="Logo.png" alt="">
+    
+    
+                    <p>Melhor experiência para você!</p>
+    
+    
+                    <div class="social-icons">
+                        <a href="#" i class="fab fa-twitter" title="Twitter"></a></i>
+                        <a href="#" i class="fab fa-facebook" title="Facebook"></a></i>
+                        <a href="#" i class="fab fa-instagram" title="Instagram"></a></i>
+                    </div>
+    
+    
+                </div>
+    
+                <div class="footer-column">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Delivery Details</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>FAQ</h3>
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Manage Deliveries</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How to - Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="footer-line"></div>
+    
+    
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        Shop #2000-2003. All rights reserved.
+                    </div>
+                </div>
+    
+                <div class="credit-cards">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-diners-club"></i>
+                    <i class="fab fa-cc-discover"></i>
+                </div>
+    
+            </div>
+        </footer>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+    </body>
+        
+   
+    </html>
+    

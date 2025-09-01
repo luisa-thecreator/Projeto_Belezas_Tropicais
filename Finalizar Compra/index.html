@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/LogoTopo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="barra-amarela"></div>
+
+    <header>
+ 
+        <div class="Menu">
+
+            <nav class="menu-navegacao"> 
+                <a href="../Tela Inicial/index.html"><img src="./img/Logo.png" alt="Logo"></a>
+
+                <div class="links">
+                    <a href="../Catalogo/catalogo.html" id="catalogo" target="_blank">Catalogo</a>
+                    <a href="../Tela Inicial/index.html#arranjo-simples-3" id="arranjos">Arranjos</a>
+                    <a href="../Tela Inicial/index.html#off" id="oferta">Oferta</a> 
+                    
+                  
+                </div>
+
+                <div class="icones">
+                    <a href="../Carrinho/index.html">
+                        <span class="material-icons">shopping_cart</span>
+                    </a>
+                   <a href="../login/criesuaconta.html"><span class="material-icons" >account_circle</span></a> 
+                    <button><span onclick="toggleDarkMode()" class="material-symbols-outlined" id="moon">bedtime</span></button>
+                    <div class="letras">
+                        <span onclick="aumentarLetra()"class="material-symbols-outlined">text_increase</span>
+                        <span onclick="diminuirLetra()"class="material-symbols-outlined">text_decrease</span>
+                    </div>
+                </div>   
+                <div class="language-switch">
+                    <img src="./img/Bandeira Brasil.png" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                    <img src="./img/Bandeira EUA.png" alt="English" class="flag" onclick="changeLanguage('en')">  
+                    <img src="./img/Bandeira Espanha.png" alt="Espanhou" class="flag" onclick="changeLanguage('es')">
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class = 'icon'src="./Menu_Preto.png" alt=""></button>
+                </div>
+                
+            </nav>
+            <div class="mobile-menu">
+                <a href="../Catalogo/index.html" id="mobilecatalogo" target="_blank">Catalogo</a>
+                <a href="#" id="mobilearranjos">Arranjos</a>
+                <a href="#" id="mobileoferta">Oferta</a>
+              </div>
+              
+        </div>
+
+    </header>
+    <main>
+
+        <h1 id="title">Finalizar Compra</h1>
+
+        <div class="titulo-linha">
+            <h3 id="Produtos">Produtos</h3>
+            <div class="linha-produto"></div>
+        </div>
+       
+        </div>
+    <div class="meio">
+        
+        <div class="flor">
+            <img src="./img/alpinia.png" alt="img-flor1">
+            <div class="descricao-flor">
+                <h3 id="title3">Vaso alpinia eventos</h3>
+                <div class="valor">R$ 350,00</div>
+                <div class="estoque" id="estoquealpinia">
+                    <strong id="strongalpinia">Estoque:</strong> Disponível
+                </div>
+                <div class="quantidade">
+                    <button class="botao">-</button>
+                    <span class="numero">1</span>
+                    <button class="botao">+</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flor">
+            <img src="./img/Heliconia.png" alt="img-flor2">
+            <div class="descricao-flor">
+                <h3 id="title3heliconia">Arranjo de heliconias amarelas</h3>
+                <div class="valor">R$ 200,00</div>
+                <div class="estoque">
+                    <strong id="strong-heliconia">Estoque:</strong> <span id="estoque-heliconia">Disponível</span>
+                </div>
+                <div class="quantidade">
+                    <button class="botao">-</button>
+                    <span class="numero">3</span>
+                    <button class="botao">+</button>
+                </div>
+            </div>
+        </div>
+    </main>   
+<div class="resumo-compra">
+            <section>
+                <h3 id="title3resumo">Resumo da compra</h3>
+                <div class="linha-compra"></div>
+                <div class="subtotal">
+                    <p>Subtotal:</p>
+                    <p>R$ 950,00<p>
+                </div>
+
+                <div class="envio">
+                    <p id="envio">Envio:</p>
+                    <p>R$ 15,00</p>
+                </div>
+                <div class="cupom">
+                    <h4 id="cupomdesconto">Cupom de desconto: </h4>
+                    <input type="text"  placeholder="Cupom de desconto">
+                    <button class="botao-resumo" id="usar">Usar Cupom</button>
+                </div>
+                <div class="linha-desconto"></div>
+                <div class="desconto">
+                    <p id="desconto">Desconto</p>
+                    <p>-R$20,00</p>
+                </div>
+                <div class="total">
+                    <p id="total">Total</p>
+                    <p>R$ 940,00</p>
+                </div>
+                <div class="botao-finalizar">
+                    <a href="../pagamento/index.html"><button id="finalizar">Finalizar Compra</button></a>
+                </div>
+            </section>
+        </div>
+    <div class="linha-verde"></div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <div class="chatbot">
+        <a href="https://typebot.co/belezas-tropicais-ud29elm" target="_blank"><span class="material-symbols-outlined">local_florist</span></a>
+    </div>
+
+
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+        <script src="script.js"></script>
+
+        <footer class="footer"></footer>
+        <div class="barra-amarela3">
+        </div>
+        
+            <div class="footer-container">
+    
+                <div class="footer-column">
+    
+                    <img src="img/logo.png">
+    
+    
+                    <p>Melhor experiência para você!</p>
+    
+    
+                    <div class="social-icons">
+                        <a href="#" i class="fab fa-twitter" title="Twitter"></a></i>
+                        <a href="#" i class="fab fa-facebook" title="Facebook"></a></i>
+                        <a href="#" i class="fab fa-instagram" title="Instagram"></a></i>
+                    </div>
+    
+    
+                </div>
+    
+                <div class="footer-column">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Delivery Details</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>FAQ</h3>
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Manage Deliveries</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>RESOURCES</h3>
+                    <ul>
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How to - Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="footer-line"></div>
+
+    
+                <div class="credit-cards">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-diners-club"></i>
+                    <i class="fab fa-cc-discover"></i>
+                </div>
+    
+            </div>
+        
+            <div class="chatbot">
+                <a href="https://typebot.co/belezas-tropicais-ud29elm" target="_blank"><span class="material-symbols-outlined">local_florist</span></a>
+            </div>
+
+</body>
+</html>

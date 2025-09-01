@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua conta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <script src="script.js"></script>
+    <link rel="icon" href="./img/LogoTopo.png" type="image/x-icon">
+
+</head>
+
+<body id="fundo">
+
+    <div class="barra-amarela"></div>
+
+    <div class="Menu">
+
+        <nav class="menu-navegacao">
+            <div class="logo-do-menu">
+                <a href="../Tela Inicial/index.html"><img
+                        src="https://s3-alpha-sig.figma.com/img/a20e/ce76/74dcf21db8619861e34205afcb33e0ca?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nyBC3WFNipM~qjfKf-WfbP1nUxY~Nnxk4Hpusa2EVKTiIL76~AnvoP8i20RyBnH~vbYdsn91VNjCz85OG8yM9SjdI~pWlR4TJdpyOKHipuTXV7DP5nvmbEX-RzwLITikb8jEbG~Xbfc6lU7tpryHKuDkvPMhNLFexcHcXrHze3PkjXRCiZmcNt32qWapk3DBU7VA8Y7iJbhYq~Z~aOAKnmb6NGOL55XveVSqUGK1tCLRHLXLWWTQL-DSKBzoQrPNwW1HKWzI2dSwIV31XKmPnXQNOsfSIO6bDI8kuRe1gtwODkX7zdtF1BCjJ6YHEJrqM-ifxAqfT1MCLE8-Mwgzgg__"
+                        alt="Logo"></a>
+            </div>
+
+            <div class="links" id="links">
+                <a href="../Catalogo/catalogo.html" id="catalogo">Catálogo</a>
+                <a href="../Tela Inicial/index.html#arranjo-simples-3" id="arranjos">Arranjos</a>
+                <a href="../Tela Inicial/index.html#off" id="oferta">Oferta</a>
+
+
+            </div>
+
+            <div class="iconesmae">
+
+                <div class="icones" id="icones">
+                    <a href="../Carrinho/index.html"><button onclick=""><span class="material-icons">shopping_cart</span></button></a>
+
+                </div>
+
+                <div class="icones2" id="icones2">
+
+                    <a href="../login/criesuaconta.html"><button onclick=""><span class="material-icons">account_circle</span></button></a>
+
+                </div>
+
+                <div class="botoes" id="botoes">
+                    <button onclick="toggleDarkMode()"><span class="material-symbols-outlined">
+                            dark_mode
+                        </span>
+                    </button>
+                </div>
+
+                <div class="botoes2" id="botoes2">
+                    <button onclick="aumentarLetra()"><span class="material-symbols-outlined"
+                            id="aumentar-Letra">text_increase
+                        </span>
+                    </button>
+                </div>
+                <div class="botoes3" id="botoes3">
+                    <button onclick="diminuirLetra()"><span class="material-symbols-outlined"
+                            id="diminuir-Letra">text_decrease
+
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="language-switch">
+                <img src="./img/Bandeira-Brasil.jpeg.jpg" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                <img src="./img/Bandeira-EUA.jpeg.jpg" alt="English" class="flag" onclick="changeLanguage('en')">
+                <img src="./img/Bandeira-Espanha.jpeg.jpg" alt="Español" class="flag" onclick="changeLanguage('es')">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <div class="icon">
+                    <button onclick="responsividade()"><img class="icon" src="img/menu2.png" alt=""></button>
+                    </span></button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../Catalogo/index.html" class="nav-link" id="catalogo">Catálogo</a></li>
+                <li class="nav-item"><a href="../Tela Inicial/index.html#arranjo-simples-3" class="nav-link" id="arranjos">Arranjos</a></li>
+                <li class="nav-item"><a href="../Tela Inicial/index.html#off" class="nav-link" id="oferta">Oferta</a></li>
+            </ul>
+
+            <div class="iconesmae">
+
+                <div class="icones" id="icones">
+                    <button onclick=""><span class="material-icons">shopping_cart</span></button>
+
+                </div>
+
+                <div class="icones2" id="icones2">
+
+                    <button onclick=""><span class="material-icons">account_circle</span></button>
+
+                </div>
+
+                <div class="botoes" id="botoes">
+                    <button onclick="toggleDarkMode()"><span class="material-symbols-outlined">
+                            dark_mode
+                        </span>
+                    </button>
+                </div>
+
+                <div class="botoes2" id="botoes2">
+                    <button onclick="aumentarLetra()"><span class="material-symbols-outlined"
+                            id="aumentar-Letra">text_increase
+                        </span>
+                    </button>
+                </div>
+                <div class="botoes3" id="botoes3">
+                    <button onclick="diminuirLetra()"><span class="material-symbols-outlined"
+                            id="diminuir-Letra">text_decrease
+
+                        </span>
+                    </button>
+                </div>
+
+
+
+            </div>
+
+            <div class="language-switch">
+                <img src="img/Bandeira-Brasil.jpeg" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                <img src="img/Bandeira-EUA.jpeg" alt="English" class="flag" onclick="changeLanguage('en')">
+                <img src="img/Bandeira-Espanha.png" alt="Español" class="flag" onclick="changeLanguage('es')">
+            </div>
+
+        </div>
+
+    </div>
+
+    <header>
+
+        <main>
+
+            <div class="principal">
+
+                <div class="titulo-linha">
+                    <h3 id="texto9">CRIE SUA CONTA</h3>
+                    <div class="linha"></div>
+                </div>
+
+                <div class="tela-login">
+                    <h4 id="texto1">Digite seu Email</h4>
+                    <input type="email" placeholder="">
+                    <h4 id="texto2">Celular</h4>
+                    <input type="text" placeholder="">
+                    <h4 id="texto3">Digite sua Senha</h4>
+                    <input type="text" placeholder="">
+                    <h4 id="texto4">Confirmação de Senha</h4>
+                    <input type="text" placeholder="">
+                    <br><br>
+                    <button id="texto5" onclick="sla()">Confirmar</button>
+
+                    <div class="google">
+                        <img src="./img/googlefdp.png.jpg" alt="google" id="google">
+                        <img src="./img/fecebook.jpg" alt="facebook" id="facebook">
+                        <a href="#">ADMINISTRADOR</a>
+
+                    </div>
+
+                </div>
+
+
+
+
+        </main>
+
+    </header>
+
+    <nav>
+        <span class="florrr">
+            <img
+                src="https://s3-alpha-sig.figma.com/img/63b7/ed43/494299390aee61789cc2d17189f73d20?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k5~OOdHKNole9lh5nPbhV9BVRdZ8zfvuRF40dfLfoCuf-rBOQhOVZ6HCiGd0OFw0uGNeRqD3WhV~9DmOjwAyncKIon6IvgNPKxXL2wke-kAgs7uDAUo0Lnyk3xaEU~RpsQMV9H5oFeBMKlqhrJr-S~HhWyXqGKUOBQGO5t9B6ug7KawXLDM4svp7HpX~yhycNxrnumiADydU2f-QXTwOqZ8oYu2xp8S9OT6WLhBN5HLYC909JYc5j1yoFrcgQHmLwQ1jBN4le8MRcrBSBoixfuc6z1yuy-2LkSjMLbkWH~Olz2bLVJLr-R4f7Vhy1dnGcRuSrIGlmPDZGmwirYLaYQ__">
+        </span>
+
+    </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <img
+                    src="https://s3-alpha-sig.figma.com/img/a20e/ce76/74dcf21db8619861e34205afcb33e0ca?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nyBC3WFNipM~qjfKf-WfbP1nUxY~Nnxk4Hpusa2EVKTiIL76~AnvoP8i20RyBnH~vbYdsn91VNjCz85OG8yM9SjdI~pWlR4TJdpyOKHipuTXV7DP5nvmbEX-RzwLITikb8jEbG~Xbfc6lU7tpryHKuDkvPMhNLFexcHcXrHze3PkjXRCiZmcNt32qWapk3DBU7VA8Y7iJbhYq~Z~aOAKnmb6NGOL55XveVSqUGK1tCLRHLXLWWTQL-DSKBzoQrPNwW1HKWzI2dSwIV31XKmPnXQNOsfSIO6bDI8kuRe1gtwODkX7zdtF1BCjJ6YHEJrqM-ifxAqfT1MCLE8-Mwgzgg__">
+
+
+                <p>Melhor experiência para você!</p>
+
+
+                <div class="social-icons">
+                    <a href="#" i class="fab fa-twitter" title="Twitter"></a></i>
+                    <a href="#" i class="fab fa-facebook" title="Facebook"></a></i>
+                    <a href="#" i class="fab fa-instagram" title="Instagram"></a></i>
+                </div>
+
+
+            </div>
+
+            <div class="footer-column">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Delivery Details</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>FAQ</h3>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Manage Deliveries</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Payments</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>RESOURCES</h3>
+                <ul>
+                    <li><a href="#">Free eBooks</a></li>
+                    <li><a href="#">Development Tutorial</a></li>
+                    <li><a href="#">How to - Blog</a></li>
+                    <li><a href="#">Youtube Playlist</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-line"></div>
+
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    Shop #2000-2003. All rights reserved.
+                </div>
+            </div>
+
+            <div class="credit-cards">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-diners-club"></i>
+                <i class="fab fa-cc-discover"></i>
+            </div>
+
+        </div>
+    </footer>
+    <div class="chatbot">
+        <a href="https://typebot.co/belezas-tropicais-ud29elm" target="_blank"><span
+                class="material-symbols-outlined">local_florist</span></a>
+    </div>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

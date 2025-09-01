@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../DESIGN"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Catalogo"
+	}
+}

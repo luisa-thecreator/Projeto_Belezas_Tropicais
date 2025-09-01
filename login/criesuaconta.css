@@ -1,0 +1,741 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.tela-login h5{
+margin-left: 110px;
+}
+
+
+
+
+
+:root {
+  --button-color: #b92a54;
+  --text-color: #000;
+  --rodape: #3f5d3f;
+  --cabecalho: #f69904;
+}
+
+.barra-amarela {
+  width: 100%;
+  height: 25px;
+  background-color: var(--cabecalho);
+  border-bottom: 5px solid var(--cabecalho);
+}
+
+.menu-navegacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;   
+}
+
+.links{
+  display: flex;
+  gap: 95px;    
+  row-gap: 60px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.icones{
+  display: flex;
+  gap: 30px;
+}
+.email{
+  margin-top: -50px;
+}
+
+.florrr img{
+  margin-top: -400px;
+}
+.principal .titulo-linha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: 100px;
+}
+
+.principal .titulo-linha h3 {
+  margin-top: 80px;
+  margin-left: 150px;
+  font-size: 43px;
+  font-weight: normal;
+  color: #000;
+}
+
+.principal .titulo-linha .linha {
+  bottom: -20%;
+  margin-top: -40px;
+  margin-left: 140px;
+  width: 25%;
+  height: 7px;
+  background-color: #b1193d;
+}
+
+.menu-navegacao .logo-do-menu a {
+  cursor: default;
+}
+
+.menu-navegacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-navegacao .logo-do-menu a img {
+  width: 93px;
+  margin-left: 10px;
+}
+
+.links {
+  display: flex;
+  gap: 60px;
+  row-gap: 60px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.icones {
+  cursor: pointer;
+  display: flex;
+  gap: 40px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #00000006;
+  width: 400px;
+  margin: 5px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #4b4b4b;
+  gap: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+#seachInput {
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+.Menu-Pesquisa label {
+  height: 20px;
+}
+
+.principal .tela-login {
+  margin-top: 230px;
+  margin-left: 800px;
+  padding: 20px;
+}
+
+.tela-login {
+  font-size: 16px;
+}
+
+.principal .tela-login input {
+  border-radius: 35px;
+}
+
+.principal .tela-login button {
+  padding: 8px 16px;
+  border-radius: 15px;
+  background-color: var(--button-color);
+  margin-left: 180px;
+  border: none;
+}
+
+#texto5 {
+  color: #fff;
+}
+
+button:hover {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.principal .tela-login button:hover {
+  transition: all ease 0.2s;
+  transform: scale(1.06);
+}
+
+.principal .tela-login h4 {
+  margin-top: 20px;
+}
+
+.icones button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-right: 30px;
+  margin-left: -25px;
+}
+
+.icones2 button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-right: 30px;
+  margin-left: -25px;
+}
+
+.botoes button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-right: 30px;
+  margin-left: -25px;
+}
+
+.botoes2 button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-right: 30px;
+  margin-left: -25px;
+}
+
+.botoes3 button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  margin-left: -25px;
+}
+
+.principal .google #google {
+  margin-bottom: -35px;
+  margin-left: 175px;
+}
+
+.principal .google #facebook {
+  margin-bottom: -35px;
+}
+
+.google img{
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.google{
+ gap: 10px;
+}
+
+.google a {
+  margin-left: 400px;
+}
+
+.footer {
+  height: 45px;
+  background-color: #3f5e3f;
+  padding: 10px 0;
+  text-align: left;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.footer .footer-container{
+  margin-top: 60px;
+}
+
+.florrr img {
+  margin-left: 120px;
+  width: 450px;
+  height: 450px;
+  
+}
+
+header .principal .tela-login {
+  margin-top: -50px;
+  height: -200px;
+}
+
+header .principal .tela-login input {
+  width: 400px;
+  background-color: #d5d5d5;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+.iconesmae {
+  display: flex;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .Menu {
+    padding: 1.5rem 4rem;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .menu-navegacao .iconesmae {
+    display: none;
+  }
+
+  .principal .titulo-linha {
+    flex-direction: column;
+  }
+
+  .menu-navegacao .language-switch {
+    display: none;
+  }
+  .mobile-menu #icones{
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu a {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .mobile-menu .links {
+    display: block;
+    padding-top: 1rem 2rem;
+  }
+  .mobile-menu .icones {
+    display: block;
+    margin-left: 80px;
+  }
+  .mobile-menu .language-switch{
+    margin-left: 232px;
+  }
+
+  .mobile-menu .iconesmae{
+    margin-left: 130px;
+  }
+  .open {
+    display: block;
+  }
+  .mobile-menu span {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+  }
+
+  .principal {
+    flex-direction: column;
+  }
+
+  .florrr{
+    display: none;
+  }
+
+  .principal .tela-login {
+    margin-top: 100px;
+    margin-left: 10px;
+    padding-top: 100px;
+  }
+
+  .principal .linha{
+   width: 45%;
+  }
+
+  .principal .titulo-linha{
+    margin-top: -80px;
+  }
+}
+
+#icon {
+  width: 30px;
+}
+
+.language-switch img {
+  width: 32px;
+  height: 25px;
+  cursor: pointer;
+}
+
+nav .florrr img{
+  margin-top: -500px;
+}
+
+/*dark mode*/
+
+.dark-mode {
+  --button-color: var(--button-color);
+  --text-color: #fff;
+  --rodape: var(--rodape);
+  --cabecalho: var(--cabecalho);
+  background-color: #000000;
+  color: var(--text-color);
+}
+
+.dark-mode a {
+  color: #ffffff;
+}
+
+.dark-mode .icones {
+  cursor: pointer;
+  display: flex;
+  gap: 40px;
+}
+
+.dark-mode input {
+  background-color: #333;
+  color: #ffffff;
+  border-color: #555;
+}
+
+.dark-mode .barra-amarela {
+  width: 100%;
+  height: 25px;
+  border-bottom: 5px solid #f69904;
+  background-color: #f69904;
+}
+
+.dark-mode .icones button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.dark-mode .icones2 button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  margin-right: 30px;
+  margin-left: -25px;
+}
+
+.dark-mode .botoes3 button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  margin-right: 10px;
+  margin-left: -25px;
+}
+
+.dark-mode .titulo-linha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.dark-mode .titulo-linha h3 {
+  color: #ffffff;
+  margin-top: 100px;
+  margin-left: 150px;
+  font-size: 43px;
+  font-weight: normal;
+}
+
+.dark-mode .titulo-linha .linha {
+  bottom: -20%;
+  margin-top: -30px;
+  margin-left: 140px;
+  width: 25%;
+  height: 7px;
+  background-color: #b1193d;
+}
+
+.dark-mode .menu-navegacao .logo-do-menu a {
+  cursor: default;
+}
+
+.dark-mode #texto5 {
+  color: #fff;
+}
+
+.dark-mode .principal .tela-login button {
+  background-color: var(--button-color);
+  padding: 8px 16px;
+  border-radius: 15px;
+  margin-left: 180px;
+  border: none;
+}
+
+.dark-mode .menu-navegacao .language-switch img {
+  height: 17px;
+  width: 27px;
+  cursor: pointer;
+}
+
+.dark-mode .principal .tela-login input {
+  border-radius: 35px;
+}
+
+.dark-mode .principal .tela-login button:hover {
+  transition: all ease 0.2s;
+  transform: scale(1.06);
+}
+
+.dark-mode header .principal .tela-login input {
+  width: 400px;
+  background-color: #424242;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+.dark-mode .botoes button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 30px;
+  margin-left: -25px;
+}
+
+.dark-mode .botoes2 button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 30px;
+  margin-left: -25px;
+}
+
+.dark-mode .florrr img {
+  margin-left: 120px;
+  width: 450px;
+  height: 450px;
+}
+
+.dark-mode .principal .tela-login #texto5 {
+  background-color: #b92a54;
+}
+
+.footer-column img {
+  width: 100px;
+  margin-bottom: -10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #525252;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #c0bebe;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #525252;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #c0bebe;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-column {
+      text-align: center;
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 30px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #525252;
+  background-color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #525252;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+      justify-content: center;
+  }
+}
+
+.footer-line {
+  width: 100%;
+  height: 2px;
+  background-color: #cccccc;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #aaa8a8;
+}
+
+.credit-cards {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  color: #525252;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+
+.credit-cards i {
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.credit-cards i:hover {
+  background-color: #525252;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .credit-cards {
+      justify-content: center;
+  }
+
+  .credit-cards {
+      margin-left: 0; 
+  }
+}
+.chatbot a{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 41rem; 
+  right: 40px; 
+  z-index: 1000; 
+  width: 60px; /* Largura do botão */
+  height: 60px; /* Altura do botão (igual à largura para ser um círculo) */
+  background-color: var(--button-color); /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border-radius: 50%; /* Torna o elemento redondo */
+  border-color: transparent;
+  z-index: 1000; /* Garante que fique sobre outros elementos */
+  cursor: pointer; 
+  animation: float 4s infinite;
+}
+.chatbot span{
+  margin-top: 18px;
+  margin-right: 18px;
+}
+@keyframes float {
+  0% {
+      transform: translateY(0); /* Posição inicial */
+  }
+  50% {
+      transform: translateY(-10px); /* Sobe */
+  }
+  100% {
+      transform: translateY(0); /* Volta à posição inicial */
+  }
+}

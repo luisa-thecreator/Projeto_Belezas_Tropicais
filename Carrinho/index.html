@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Carrinho</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="icon" href="./img/LogoTopo.png" type="image/x-icon">
+</head>
+<body id="fundo">
+    <div class="barra-amarela"></div>
+    <header>
+
+        <div class="Menu">
+
+            <nav class="menu-navegacao">
+                <a href="../Tela Inicial/index.html"><img src="./img/Logo.png" alt="Logo"></a>
+
+                <div class="links" id="links1" >
+                    <a href="../Catalogo/index.html"  id="catalogo">Catalogo</a>
+                    <a href="#"  id="arranjos">Arranjos</a>                 
+                    <a href="#" id="oferta">Oferta</a>
+                </div>
+                <div class="search">
+                    <label for="seachInput">
+                        <span class="material-icons">search</span>
+                    </label>
+                    <input type="text" id="seachInput" placeholder="Procure por produtos...">
+                </div>
+
+
+                <div class="icones">
+                    <span class="material-icons">shopping_cart</span>
+                    <a href="../login/criesuaconta.html"><span class="material-icons" >account_circle</span></a> 
+                    <span id="modo" onclick= "toggleDarkMode()"class="material-symbols-outlined">bedtime</span>
+                    <span onclick="aumentarLetra()"class="material-symbols-outlined">text_increase</span>
+                    <span onclick="diminuirLetra()"class="material-symbols-outlined">text_decrease</span>
+                
+                </div>
+
+                <div class="language-switch">
+                    <img src="./img/Bandeira Brasil.png" alt="Português" class="flag" onclick="changeLanguage('pt')">
+                    <img src="./img/Bandeira EUA.png" alt="English" class="flag" onclick="changeLanguage('en')">  
+                    <img src="./img/Bandeira Espanha.png" alt="Espanõl" class="flag" onclick="changeLanguage('es')"> 
+                  </div>
+              
+              
+           
+        </div>
+        <div class="mobile-menu-icon">
+            <button onclick="responsividade()"><img class = 'icon'src="./Menu_Preto.png" alt=""></button>
+        </div>
+ </nav>
+    <div class="mobile"></div>
+        <div class="mobile-menu">
+            <div class="links" id="links1" >
+                <a href="#" >Arranjos</a>
+                <a href="#">Oferta</a>
+            </div>
+
+            <div class="icones">
+                <a href="../Carrinho/index.html"><span class="material-icons">shopping_cart</span></a>
+                <a href="../login/criesuaconta.html"><span on class="material-icons">account_circle</span></a>
+                <span id="modo" onclick= "toggleDarkMode()"class="material-symbols-outlined">bedtime</span>
+                <span onclick="aumentarLetra()"class="material-symbols-outlined">text_increase</span>
+                <span onclick="diminuirLetra()"class="material-symbols-outlined">text_decrease</span>
+               
+            </div>
+    </div>
+     
+</div>
+
+    </header>
+    <main>
+        <h1 class="title" id="texto1">Seu Carrinho</h1>
+        <div class="linha-produto"></div>
+        <div class="titulo-linha">
+            <ul>
+                <li>Produto</li>
+                <li>Valor</li>
+                <li>Quantidade</li>
+            </ul>
+            
+        </div>
+
+        <div class="produto">
+            <img src="./img/alpinia.png" alt="Imagem do Produto (Vaso de Alpinia-Jardim)">
+            <div class="descricao">
+                <h3 id="texto4"> Vaso de Alpinia-Jardim</h3>
+                <p  id="preco1" class="preco">R$ 500,00</p>
+                <div class="quantidade1">
+                    <button class="botao">-</button>
+                    <span class="numero">5</span>
+                    <button class="botao">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="./img/Heliconia.png" alt="Imagem do Produto (Vaso de Heliconia-Jardim)">
+            <div class="descricao">
+                <h3 id="texto5">Vaso de Heliconia-Jardim</h3>
+                <p id="preco2" class="preco">R$ 500,00</p>
+                <div class="quantidade">
+                    <button class="botao">-</button>
+                    <span class="numero">4</span>
+                    <button class="botao">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- botoes -->
+        <div class="botoes">
+            <a href="../Catalogo/catalogo.html"><button class="botao-continuar" id="texto6">Continuar Comprando</button></a>
+           <a href="../Finalizar Compra/index.html"> <button class="botao-finalizar" id="texto7">Finalizar Compra</button></a>
+        </div>
+    </main>
+      <!--Parte das Libras-->
+
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+
+    <!--Parte das Libras-->    
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+  
+    <div class="linha-verde"></div>
+
+    <!--chat bot-->
+    <div class="chatbot">
+        <a href="https://typebot.co/belezas-tropicais-ud29elm" target="_blank"><span class="material-symbols-outlined">local_florist</span></a>
+    </div>
+ 
+        <script src="script.js"></script>
+</body>
+</html>

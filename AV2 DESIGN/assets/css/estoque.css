@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    margin: 0; /* Remove as margens padrão */
+    padding: 0;
+    background-color: white
+}
+
+.menu-navegacao .Logo img{
+width: 91px;
+height: 91px;
+}
+.cabeçalho button{
+    padding: 8px 16px;
+    margin-right: 20px;
+    background-color: chocolate;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+}
+
+#inicio h1{
+    text-align: center;
+    
+}
+#inicio h2{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.cards{
+width: 400px;
+border: 1px solid ;
+border-radius: 10px;
+background-color: white;
+padding: 20px;
+box-shadow: 0 4px 8px;
+text-align: center;
+
+}
+.cards button{
+    padding: 12px 24px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--button-color);
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+:root{
+    --button-color:#B92A54;
+    --text-color:#000;
+    --rodape:#3F5D3F;
+    --cabecalho:#F69904;
+}
+
+
+.language-switch img{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.cuadrado-verde {
+    margin-top: 30px;
+    background-color: #00ca1b;
+}
+
+
+
+
+
+
+
+/*logo*/
+
+.footer-column img {
+    width: 100px;
+    margin-bottom: -10px;
+}
+
+/*--------------------*/
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+    margin: 10px;
+}
+
+/* el titulo em negrita das 4 colunas*/
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #525252;
+}
+
+/*--------------------*/
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #c0bebe;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #525252;
+}
+
+
+
+/*text que ta encima das logos de coisa net*/
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c0bebe;
+    margin-top: 0;
+}
+
+/*--------------------*/
+
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons .icon {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #525252;
+    background-color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #525252;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+/* Estilos gerais para o modo noturno */
+.dark-mode {
+    background-color: #121212; /* Cor de fundo escura para o modo noturno */
+    color: #ffffff; /* Texto branco no modo noturno */
+  }
+  
+  /* Modo noturno para os menus principais */
+  .dark-mode .Menu, 
+  .dark-mode .mobile-menu {
+    background-color: #1e1e1e; /* Fundo mais escuro para os menus */
+  }
+  
+  /* Links no modo noturno */
+  .dark-mode .links a {
+    color: #ffffff; /* Texto branco nos links */
+  }
+  
+  /* Links no modo noturno (quando o mouse passa por cima) */
+  .dark-mode .links a:hover {
+    color: #00bcd4; /* Cor de destaque */
+  }
+  
+  /* Ícones no modo noturno */
+  .dark-mode .icones span {
+    color: #ffffff; /* Ícones brancos no modo noturno */
+  }
+  
+  /* Input de pesquisa */
+  .dark-mode .search input {
+    background-color: #333333; /* Fundo escuro para o input */
+    color: #ffffff; /* Texto claro no input */
+    border: 1px solid #444444; /* Borda mais escura */
+  }
+  
+  /* Estilos para o menu mobile no modo noturno */
+  .dark-mode .mobile-menu {
+    background-color: #1e1e1e; /* Fundo escuro para o menu mobile */
+    color: #ffffff; /* Texto claro */
+  }
+  
+  .dark-mode .mobile-menu .links a {
+    color: #ffffff; /* Links brancos no menu mobile */
+  }
+  
+  .dark-mode .mobile-menu .icones span {
+    color: #ffffff; /* Ícones brancos no menu mobile */
+  }
+  
+
+
+
+
+
+.footer-line {
+    width: 100%;
+    height: 2px;
+    background-color: #cccccc;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #aaa8a8;
+}
+
+.credit-cards {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+    color: #525252;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
+.credit-cards i {
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.credit-cards i:hover {
+    background-color: #525252;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .credit-cards {
+        justify-content: center;
+    }
+
+    .credit-cards {
+        margin-left: 0; 
+    }
+}
+
+
+.barra-amarela {
+    width: 100%; 
+    height: 25px; 
+    background-color: #F69904; 
+    border-bottom: 5px solid #F69904;
+    text-align: center 
+}
+
+.barra-amarela2 {
+    width: 30%; 
+    height: 2px; 
+    background-color: #B92A54; 
+    border-bottom: 5px solid #B92A54;
+    text-align: center; 
+    margin-left: 35%;
+    
+}
+
+
+.titulo-linha {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 5px;
+}
+
+.titulo-linha h3 {
+    margin: 0;
+    font-size: 18px; 
+    font-weight: normal;
+    color: #000; 
+}
+
+.titulo-linha .linha {
+    width: 20%; 
+    height: 3px; 
+    background-color: #b1193d; 
+}
+
+
+
+.menu-navegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+
+}
+.menu-navegacao img{
+    width: 91px;
+    height:91px;
+    margin-left: 10px;
+}
+.links{
+    display: flex;
+    gap: 35px;    
+    row-gap: 60px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+.icones{
+    display: flex;
+    gap: 35px;
+    cursor: pointer;
+    
+   
+}
+
+h1{
+    color: #0f0f0f;
+}
+
+
+.search{
+    display:flex;
+    align-items: center;
+    border: 1px solid #cccccc;
+    background-color:#00000006 ;
+    width: 400px;
+    margin: 5px ;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #4b4b4b;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+#seachInput{
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.Menu-Pesquisa label{
+    height: 20px;
+}
+
+.inicio h1{
+    font-family: "Kumbh Sans", sans-serif;   
+}
+
+#flores{
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    
+}
+
+#flores .cards img{
+    width: 150px;
+    height: 230px;
+    margin-top: 20px;
+}
+
+#flores .cards h3{
+    font-family: "Kumbh Sans", sans-serif;  }
+
+
+    #flores .cards h4{
+        font-family: "Kumbh Sans", sans-serif;  }
+h2{
+    font-family: "Kumbh Sans", sans-serif;
+    margin-left: 40px; 
+    margin-top: 20px; /* Espaço acima */
+    margin-bottom: 20px;
+}
+
+ .cards button{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     
+}
+
+.dark-mode{
+    --button-color:var(--button-color);
+    --text-color: #fff;
+    --rodape: var(--rodape);
+    --cabecalho: var(--cabecalho);
+    background-color: #000000;
+    color: var(--text-color);
+  }
+  
+  .dark-mode a {
+    color: #ffffff;
+  }
+  .dark-mode h1 {
+    color: #ffffff;
+  }
+ 
+  .dark-mode .cards {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #555;
+  }
+
+#flores .cards:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 20px #1c1f30;
+    transition: all ease .2s;
+    
+  
+}
+.iconesssss h3{
+   
+    text-align: center;
+    
+    }
+.barra-amarela3 .iconesssss{
+display: flex;
+text-align: center;
+margin-top: 22px;
+color: white;
+
+
+}
+.barra-amarela3 .iconesssss span{
+    width: 200px;
+}
+
+
+button{
+    border-radius: 10px;
+    padding: 8px 16px;
+    
+}
+.barra-amarela3 .textoqualquer{
+    margin-top: 40px;
+}
+.barra-amarela3 h4{
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+.barra-amarela3 h3{
+    font-size: 30px;
+    margin-left: 30px;
+
+}
+.barra-amarela3 i{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border:0;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin: 20px;
+    margin-left: 30px;
+}
+
+
+.barra-amarela3 {
+        width: 100%; 
+        height: 80px; 
+        background-color: var(--rodape); 
+        border-bottom: 5px solid --rodape;
+       
+        color: white;
+        margin-top:20px ;
+    }
+
+    
+#flores .cards span{
+    color: red
+    
+}
+
+.cards button:hover{
+    background-color:#701429;
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+#flores .cards{
+    margin-left: 50px;
+}
+
+.barra-amarela3{
+    margin-top: 40px;
+}
+.mobile-menu-icon{
+    display: none;
+
+}
+.mobile-menu{
+    display: none;
+}
+
+.filtragem{
+    display:flex;
+    margin-left: 700px;
+    gap: 20px;
+   
+    
+}
+
+.filtragem button{
+    background-color: #b1193d;
+}
+@media screen and (max-width: 1000px) {
+    .Menu{
+        padding: 1.5rem 4rem;
+    }
+    .links{
+        display: none;
+    }
+    .icones{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -105px;
+    }
+    .mobile-menu-icon img{
+        width: 50px;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu a{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+      
+    }
+    .mobile-menu .links{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .icones{
+        display: block;
+        padding: 1rem 2rem;
+        
+    }
+  .open{
+    display: block;
+  }
+  .mobile-menu span{
+   display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+#flores {
+    flex-direction: column;
+    margin-left: 90px;
+    
+  }
+  #flores h2{
+    text-align: center;
+  }
+  #flores .filtragem button{
+ flex-direction: column;
+  }
+  }
+
+#moon{
+    cursor:pointer;
+}
+/* Modo noturno */
+.dark-mode {
+    background-color: #121212; /* Cor de fundo escura */
+    color: #ffffff; /* Texto claro */
+}
+
+/* Estilos opcionais para links ou botões */
+.dark-mode a {
+    color: #ffffff;
+}
+
+.letras button{
+    border-color: transparent;
+    background-color: transparent;
+    margin-left: 390px;
+}
+.language-switch img{
+    width: 32px;
+    height: 32px;
+}
+
+.chatbot a{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 41rem; 
+    right: 40px; 
+    z-index: 1000; 
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão (igual à largura para ser um círculo) */
+    background-color: var(--button-color); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border-radius: 50%; /* Torna o elemento redondo */
+    border-color: transparent;
+    z-index: 1000; /* Garante que fique sobre outros elementos */
+    cursor: pointer; 
+    animation: float 4s infinite;
+}
+.chatbot span{
+    margin-top: 18px;
+    margin-right: 18px;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-10px); /* Sobe */
+    }
+    100% {
+        transform: translateY(0); /* Volta à posição inicial */
+    }
+}
+.letras span{
+    margin-left: -172px;
+}

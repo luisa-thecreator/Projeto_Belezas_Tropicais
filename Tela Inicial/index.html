@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Principal</title>
+    <link rel="stylesheet" href="pag1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji" rel="stylesheet">
+
+
+
+</head>
+
+
+<body>
+    <div class="Laranja">
+        <p id="frete-gratis"> FRETE GRATIS NAS COMPRAS A PARTIR DE 150 REAIS </p>
+    </div>
+
+    <nav class="parte-de-cima">
+        <a href="./index.html"></a><img src="img/logo.png"></a>
+
+        <div class="links">
+            <a id="catalogo" href="../Catalogo/catalogo.html">Catalogo</a>
+            <a id="arranjos" href="#arranjo-simples-3">Arranjos</a>
+            <a id="oferta" href="#off">Oferta</a>
+        </div>
+
+        <div class="search">
+            <label for="seachInput">
+                <span class="material-icons">search</span>
+            </label>
+            <input type="text" id="seachInput" placeholder="Procure por produtos...">
+        </div>
+
+
+        <div class="icones">
+            <a href="../Carrinho/index.html"><span class="material-icons">shopping_cart</span></a>
+            <a href="../login/criesuaconta.html"><span class="material-icons" >account_circle</span></a> 
+            <span id="modo" onclick="noturno()" class="material-symbols-outlined">bedtime</span>
+
+
+            <span onclick="aumentarLetra()" class="material-symbols-outlined" id="aumentar-Letra">text_decrease</span>
+            <span onclick="diminuirLetra()" class="material-symbols-outlined" id="diminuir-Letra">text_increase</span>
+
+            <div class="language-switch">
+                <img src="img/Bandeira Brasil.png " alt="Português" class="flag" onclick="changeLanguage('pt')">
+                <img src="img/Bandeira EUA.png" alt="English" class="flag" onclick="changeLanguage('en')">  
+                <img src="img/Bandeira Espanha.png" alt="Espanõl" class="flag" onclick="changeLanguage('es')"> 
+              </div>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="responsividade()"><img class="icon" src="img/menu2.png" alt=""></button>
+        </div>
+
+    <div class="mobile">
+        <div class="mobile-menu">
+            <div class="parte-de-cima">
+            <div class="links" id="links1" >
+                <a href="../Catalogo/catalogo.html" >Catalogo</a>
+                <a href="#" >Arranjos</a>
+                <a href="#">Oferta</a>
+            </div>
+
+            
+        <div class="icones">
+            <span class="material-icons">shopping_cart</span>
+            <span on class="material-icons">account_circle</span>
+            <span id="modo" onclick="noturno()" class="material-symbols-outlined">bedtime</span>
+
+
+            <span onclick="aumentarLetra()" class="material-symbols-outlined" id="aumentar-Letra">text_decrease</span>
+            <span onclick="diminuirLetra()" class="material-symbols-outlined" id="diminuir-Letra">text_increase</span>
+        </div>
+
+
+            <div class="language-switch">
+                <img src="img/Bandeira Brasil.png " alt="Português" class="flag" onclick="changeLanguage('pt')">
+                <img src="img/Bandeira EUA.png" alt="English" class="flag" onclick="changeLanguage('en')">  
+                <img src="img/Bandeira Espanha.png" alt="Espanõl" class="flag" onclick="changeLanguage('es')"> 
+            </div>
+              </div>
+        </div>
+    </div>
+
+        <script src="index.js"></script>
+
+    </nav>
+
+
+    <header>
+
+        <div class="nomes-grandes">
+            <h1 id="deixe-seu">DEIXE SEU <br id="momento-ser">MOMENTO SER <br id="mais-tropical">MAIS TROPICAL </h1>
+            <p id="onde-voce-encontra-a-maior-variedade-de-flores">Onde você encontra a maior variedade de flores <br> tropicais do Brasil</p>
+        </div>
+
+        <nav class="dois-textos">
+            <div class="compraragr">
+                <b>
+                    <p  class="compraragr2"><a href="#nossa-loja" id="localizacao">Localização</a></p>
+                </b>
+            </div>
+
+            <img src="./img/entrega.png" alt="">
+            <p id="entrega-para" class="Entregas">Entrega para <br id="todo-o-brasil"> todo o Brasil</p>
+            
+        </nav>
+
+
+    </header>
+       
+        <div id="flor-gigante">
+            <img src="img/tela-inicial.png">
+        </div>
+
+    <nav class="verde"> 
+        
+        <section class="tipodeflores">   
+            <p id="cem"> 100+ <br>Tipos de flores<p>
+            
+        </section> 
+        <section class="eventos">   
+            <p id="2000+">2000+ <br>Eventos</p>
+        </section> 
+           
+    </nav>
+
+
+
+
+
+
+    <main id="principal">
+
+
+
+        <div class="inicio-off">
+            <h2 id="off">10% OFF</h2>
+        </div>
+
+
+
+        <section id="flores">
+            <div class="cards">
+                <div class="fundo-cinza">
+                    <img src="img/Arranjo simples.png">
+                </div>
+                <h2 id="arranjo-simples-3">Arranjo Simples</h2>
+                <h3>
+                    <span class="estrelas">★ ★ ★ ★ ★</span>
+                    <span class="nota">5/5</span>
+                </h3>
+                <div class="valores">
+                    <p><b>R$ 180,00</b> </p>
+                    <p><del>R$ 200,00</del> </p>
+                    <button>10%</button>
+                </div>
+            </div>
+        
+            <div class="cards">
+                <div class="fundo-cinza">
+                    <img src="img/vasoheliconia.png">
+                </div>
+                <h2 id="arranjo-mixto">Arranjo Mixto</h2>
+                <h3>
+                    <span class="estrelas">★ ★ ★ ★ ★</span>
+                    <span class="nota">5/5</span>
+                </h3>
+                <div class="valores">
+                    <p><b>R$ 180,00</b> </p>
+                    <p><del>R$ 200,00</del> </p>
+                    <button>10%</button>
+                </div>
+            </div>
+        
+            <div class="cards">
+                <div class="fundo-cinza">
+                    <img src="img/Sleeve Striped T-shirt.png">
+                </div>
+                <h2 id="arranjo-eventos">Arranjo para Eventos</h2>
+                <h3>
+                    <span class="estrelas">★ ★ ★ ★ ★</span>
+                    <span class="nota">5/5</span>
+                </h3>
+                <div class="valores">
+                    <p><b>R$ 180,00</b> </p>
+                    <p><del>R$ 200,00</del> </p>
+                    <button>10%</button>
+                </div>
+            </div>
+        
+            <div class="cards">
+                <div class="fundo-cinza">
+                    <img src="img/heliconia.png">
+                </div>
+                <h2 id="arranjo-heliconias">Arranjo de Heliconias</h2>
+                <h3>
+                    <span class="estrelas">★ ★ ★ ★ ★</span>
+                    <span class="nota">5/5</span>
+                </h3>
+                <div class="valores">
+                    <p><b>R$ 180,00</b> </p>
+                    <p><del>R$ 200,00</del> </p>
+                    <button>10%</button>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+
+        <div id="ver">
+            <a href="../Catalogo/catalogo.html">
+                <h4 id="ver-tudo">Ver tudo</h4>
+            </a>
+        </div>
+
+
+        <div class="line-fina"></div>
+
+
+        <div class="arranjos">
+           <a href="../Catalogo/index.html"> <h2 id="arranjos-especiais">Arranjos Especiais</h2></a>
+        </div>
+
+
+
+
+
+
+
+        <section id="flores">
+            <div class="cards">
+                <div class="fundo-cinza">
+                    <img src="img/download-removebg-preview.png">
+                </div>
+                <h2 id="heliconias-laranja">Heliconias Laranja</h2>
+                <h3>
+                    <span class="estrelas">★ ★ ★ ★ ★</span>
+                    <span class="nota">5/5</span>
+                </h3>
+                <div class="valores">
+                    <p><b>R$ 280,00</b> </p>
+                </div>
+            </div>
+        
+            <div class="cards">
+                <div class="fundo-cinza">
+                    <img src="img/heliconia-amarela-para-vaso-no-aparador-geckofarms-removebg-preview.png">
+                </div>
+                <h2 id="heliconias-amarelas">Heliconias Amarelas</h2>
+                <h3>
+                    <span class="estrelas">★ ★ ★ ★ ★</span>
+                    <span class="nota">5/5</span>
+                </h3>
+                <div class="valores">
+                    <p><b>R$ 300,00</b> </p>
+                </div>
+            </div>
+        
+            <div class="cards">
+                <div class="fundo-cinza">
+                    <img src="img/arrando-mosteira.png">
+                </div>
+                <h2 id="arranjo-simples-1">Arranjo Simples</h2>
+                <h3>
+                    <span class="estrelas">★ ★ ★ ★ ★</span>
+                    <span class="nota">5/5</span>
+                </h3>
+                <div class="valores">
+                    <p><b>R$ 400,00</b> </p>
+                </div>
+            </div>
+        
+            <div class="cards">
+                <div class="fundo-cinza">
+                    <img src="img/Courage Graphic T-shirt.png">
+                </div>
+                <h2 id="arranjo-simples-2">Arranjo Simples</h2>
+                <h3>
+                    <span class="estrelas">★ ★ ★ ★ ★</span>
+                    <span class="nota">5/5</span>
+                </h3>
+                <div class="valores">
+                    <p><b>R$ 190,00</b> </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <div id="ver">
+            <a href="../Catalogo/catalogo.html">
+                <h4 id="ver-tudo">Ver tudo</h4>
+            </a>
+        </div>
+        <div class="line-fina"></div>
+
+
+    </main>
+
+
+
+
+
+
+    <div class="ava">
+        <h1 id="avaliacoes">AVALIAÇÕES</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <button class="arrow left-arrow" onclick="prevSlide()">←</button>
+        <div class="carousel">
+            <div class="slide">
+                <h2>★ ★ ★ ★ ★</h2>
+                <h1><strong>Sarah H.</strong><span class="check"></span></h1>
+                <h3 id="review-sarah">"Comprei flores para um evento e todos amaram!! Muito lindas!!"</h3>
+            </div>
+            <div class="slide">
+                <h2>★ ★ ★ ★ ★</h2>
+                <h1><strong>Marcus White</strong><span class="check"></span></h1>
+                <h3 id="review-marcus">"Otimos valores, com qualidade excelente! O atendimento é muito bom, recomendaria."</h3>
+            </div>
+            <div class="slide">
+                <h2>★ ★ ★ ★ ★</h2>
+                <h1><strong>Maria Claudia</strong><span class="check"></span></h1>
+                <h3 id="review-maria">"Já comprei várias vezes e nunca me arrependi. Definitivamente, melhores flores que existem no mercado."</h3>
+            </div>
+            <div class="slide">
+                <h2>★ ★ ★ ★ ★</h2>
+                <h1><strong>Vinicius Jr III</strong><span class="check"></span></h1>
+                <h3 id="review-vinicius">"Comprei tantas vezes que já perdi a conta, são belíssimas!"</h3>
+            </div>
+            <div class="slide">
+                <h2>★ ★ ★ ★ ★</h2>
+                <h1><strong>Glinda W.</strong><span class="check"></span></h1>
+                <h3 id="review-glinda">"Nunca vi flores tão populares! Só não são tão populares quanto eu. Muito obrigada, adorei!!!"</h3>
+            </div>
+            <div class="slide">
+                <h2>★ ★ ★ ★ ★</h2>
+                <h1><strong>Elphaba Thropp</strong><span class="check"></span></h1>
+                <h3 id="review-elphaba">"Minha irmã amou a surpresa que fiz para ela!! Ficou perfeito."</h3>
+            </div>
+        </div>
+        <button class="arrow right-arrow" onclick="nextSlide()">→</button>
+    </div>
+    
+   
+    <script src="java.js"></script>
+
+
+
+
+
+    <nav class="cuadrado-verde">
+
+        <form action="">
+
+            <section class="outro">
+                <p><span id="fique-atualizado-sobre">FIQUE ATUALIZADO SOBRE</span> <br> <span id="nossas-ofertas">NOSSAS OFERTAS</span></p>
+            </section>
+
+            <section class="textin-direita">
+                <div class="email-container">
+                    <input id="email"  type="email" placeholder="Digite seu e-mail" class="email-input">
+
+
+                    <div class="botones"><button type="submit" id="subscribe">Suscribe</button></div>
+                </div>
+
+        </form>
+        </section>
+    </nav>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <img src="img/logo.png">
+
+
+                <p id="experiencia">Melhor experiência para você!</p>
+
+
+                <div class="social-icons">
+                    <a href="#" i class="fab fa-twitter" title="Twitter"></a></i>
+                    <a href="#" i class="fab fa-facebook" title="Facebook"></a></i>
+                    <a href="#" i class="fab fa-instagram" title="Instagram"></a></i>
+                </div>
+
+
+            </div>
+
+            <div class="footer-column">
+                <h3 id="company">COMPANY</h3>
+                <ul>
+                    <li ><a href="#" id="about">About</a></li>
+                    <li ><a href="#" id="features">Features</a></li>
+                    <li><a href="#" id="works">Works</a></li>
+                    <li><a href="#" id="careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="help">HELP</h3>
+                <ul>
+                    <li><a href="#" id="customer-support">Customer Support</a></li>
+                    <li><a href="#" id="delivery-details">Delivery Details</a></li>
+                    <li><a href="#" id="terms-conditions">Terms and Conditions</a></li>
+                    <li><a href="#" id="privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="faq">FAQ</h3>
+                <ul>
+                    <li><a href="#" id="account">Account</a></li>
+                    <li><a href="#" id="manage-deliveries">Manage Deliveries</a></li>
+                    <li><a href="#" id="orders">Orders</a></li>
+                    <li><a href="#" id="payments">Payments</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="resources">RESOURCES</h3>
+                <ul>
+                    <li><a href="#" id="free-ebooks">Free eBooks</a></li>
+                    <li><a href="#" id="development-tutorial">Development Tutorial</a></li>
+                    <li><a href="#" id="how-to-blog">How to - Blog</a></li>
+                    <li><a href="#" id="youtube-playlist">Youtube Playlist</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-line"></div>
+
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    Shop #2000-2003. All rights reserved.
+                </div>
+            </div>
+
+            <div class="credit-cards">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-diners-club"></i>
+                <i class="fab fa-cc-discover"></i>
+            </div>
+            
+        </div>
+        <div class="chatbot">
+            <a href="https://typebot.co/belezas-tropicais-ud29elm" target="_blank"><span class="material-symbols-outlined">local_florist</span></a>
+        </div>
+        <div class="mapa">
+            <h3 id="nossa-loja">Nossa loja</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15800.60497763222!2d-34.9138030128418!3d-8.086053999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f3bec607c45%3A0xf9b44be61a236c4d!2sRioMar%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1733278539328!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+</body>

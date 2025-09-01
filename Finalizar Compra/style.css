@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&display=swap');
+body{
+    margin: 0; /* Remove as margens padrão */
+    padding: 0;
+    background-color: var(--fundo);
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+.meio{
+    display: flex;
+    flex-direction: column; 
+}
+/* Paleta de Cores*/
+
+:root{
+    --button-color:#B92A54;
+    --button-color-hover:#94304e;
+    --text-color:#000;
+    --rodape:#3F5D3F;
+    --cabecalho:#F69904;
+    --fundo:#F0F0F0;
+}
+
+/* Linha Amarela*/
+
+.barra-amarela {
+    width: 100%; 
+    height: 25px; 
+    background-color: var(--cabecalho); 
+    border-bottom: 5px solid var(--cabecalho); 
+}
+
+/*Menu*/
+
+.menu-navegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;   
+}
+.menu-navegacao img{
+    width: 93px;
+    margin-left: 10px;
+}
+.links{
+    display: flex;
+    gap: 95px;    
+    row-gap: 60px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+.icones{
+    display: flex;
+    gap: 30px;
+}
+
+/* Barra de Pesquisa*/
+
+.search{
+    display:flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color:#00000006 ;
+    width: 400px;
+    margin: 5px ;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #4b4b4b;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+#seachInput{
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.Menu-Pesquisa label{
+    height: 20px;
+}
+
+/* Finalizar Compra*/
+
+h1{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-left: 10%;   
+    margin-top:5px
+}
+
+/*Linha Rosa*/
+
+.titulo-linha {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 5px;
+}
+
+.titulo-linha h3 {
+    margin: 0;
+    font-size: 18px; 
+    font-weight: normal;
+    color: var(--text-color); 
+    margin-left: 10%; 
+    font-size: 1.8rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.linha-produto {
+    width: 41%; 
+    height: 7px; 
+    margin-left: 10%;
+    margin-top: 0.5rem;
+    background-color: var(--button-color); 
+}
+
+/* Flor 1*/
+
+.flor {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.flor img {
+    margin-left: 10%;
+    border: 2px solid #4b4b4b;
+    border-radius: 10px;
+    width: 160px;
+    height: auto;
+}
+
+.descricao-flor {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+}
+
+.descricao-flor h3 {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.valor {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+.estoque {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.quantidade {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.numero {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.botao {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.linha-verde{
+    width: 100%; 
+    height: 9.5rem; 
+    background-color: var(--rodape); 
+    margin-top: 5.32rem;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+/* Resumo da compra*/
+.resumo-compra h3{
+    margin-left: 3.6rem;
+    margin-bottom:2rem ;
+}
+
+.resumo-compra {
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    display:flex;
+    justify-content: flex-end;
+    margin-top: -500px;
+}
+.subtotal{
+    display: flex;
+    flex-direction: row;
+    gap:8.6rem;
+}
+.envio{
+    display: flex;
+    flex-direction: row;
+    gap:10rem;
+}
+        /* Animação botão*/
+.cupom button{
+    background-color: var(--button-color);
+    color:white;
+    border: 1px solid var(--button-color);
+    width: 100px;
+    height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.cupom button:hover{
+    background-color:var(--button-color-hover);
+    border-color: var(--button-color);
+    color: white;
+}
+.cupom button:active {
+    transform: scale(0.95); /* Efeito de diminuição no clique */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra no clique */
+}
+.desconto{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap:8rem;
+    margin-top: 2px;
+}
+.cupom{
+    margin-top: -10px
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    margin-top: -1rem;
+    gap:10rem;
+}
+.linha-compra{
+    width: 41%; 
+    height: 3px; 
+    margin-left: 15%;
+    margin-top: -1rem;
+    background-color: var(--button-color);
+}
+.linha-desconto{
+    width: 69%; 
+    height: 3px; 
+    margin-left: 1px;
+    margin-top: 1rem;
+    background-color: var(--rodape);
+}
+.botao-finalizar button{ 
+    background: linear-gradient(135deg, var(--button-color),var(--cabecalho)); /* Gradiente */
+    color: white; 
+    border: none; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    font-weight: bold;
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.botao-finalizar button:hover{
+    background: linear-gradient(135deg, var(--cabecalho),var(--button-color)); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-3px); 
+}
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+#moon{
+    cursor:pointer;
+}
+
+
+@media (max-width: 1167px) and (min-width: 270px){
+    .menu-navegacao{
+        padding:1.5rem 4rem;
+    }
+    .links a{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon img{
+        width: 45px;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu a{
+        text-align: center;
+        padding-bottom:1rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .mobile-menu .links a{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open{
+        display: block;
+    }
+    .resumo-compra{
+        margin-top: 90px;
+        margin-left: 80px;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 0;
+    }
+    .resumo-compra h3{
+        margin-left: -0.2px;
+        font-size: 30px;
+    }
+    .linha-compra{
+        width: 400px;
+        height: 5px;
+        margin-left: -1px;
+    }
+    .subtotal{
+        display: flex;
+        gap:10rem;
+    }
+    .envio{
+        display: flex;
+        gap:11.6rem;
+    }
+    .linha-desconto{
+        width: 400px;
+        height: 5px;
+    }
+    .desconto{
+        display: flex;
+        gap:11.6rem;
+    }
+    .total{
+        display: flex;
+        gap:14.5rem;
+    }
+    .dark-mode .mobile-menu a{
+        color:white
+    }
+}
+@media (max-width:529px){
+    .subtotal{
+        display: flex;
+        gap:9rem;
+    }
+    .envio{
+        display: flex;
+        gap:10.5rem;
+
+    }
+    .desconto{
+        display: flex;
+        gap:9rem;
+    }
+    .total{
+        display: flex;
+        gap:11.7rem;
+    }
+}
+
+/* Modo escuro */
+
+body.dark-mode {
+    background-color: #272727; /* Fundo escuro */
+    color: #ffffff; /* Texto claro */
+}
+
+header.dark-mode {
+    background-color: #1e1e1e;
+}
+.icones button{
+    background-color: transparent;
+    border: transparent;
+}
+
+.dark-mode #moon{
+    color:white;
+}
+.dark-mode .menu-navegacao a{
+    color: white;
+}
+
+.dark-mode h3 {
+    color: white;
+}
+.language-switch img{
+    width: 2rem;
+}
+.aumentar-Letra{
+    cursor: pointer;
+}
+.letras{
+    display: flex;
+    gap: 20px;
+}
+.icones{
+    cursor: pointer;
+}
+.chatbot a{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 41rem; 
+    right: 40px; 
+    z-index: 1000; 
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão (igual à largura para ser um círculo) */
+    background-color: var(--button-color); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border-radius: 50%; /* Torna o elemento redondo */
+    border-color: transparent;
+    z-index: 1000; /* Garante que fique sobre outros elementos */
+    cursor: pointer; 
+    animation: float 4s infinite;
+}
+.chatbot span{
+    margin-top: 18px;
+    margin-right: 18px;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-10px); /* Sobe */
+    }
+    100% {
+        transform: translateY(0); /* Volta à posição inicial */
+    }
+}
+
+.footer-column img {
+    width: 100px;
+    margin-bottom: -10px;
+}
+
+/*--------------------*/
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+    margin: 10px;
+}
+
+/* el titulo em negrita das 4 colunas*/
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #525252;
+}
+
+/*--------------------*/
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #c0bebe;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #525252;
+}
+
+
+
+/*text que ta encima das logos de coisa net*/
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c0bebe;
+    margin-top: 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
